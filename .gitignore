@@ -1,0 +1,8 @@
+# Ignore large files
+data/*.csv
+model.pkl
+*.pkl
+
+# Ignore virtual env
+venv/
+.venv/
