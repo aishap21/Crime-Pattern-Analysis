@@ -4,12 +4,10 @@ import seaborn as sns
 
 df = pd.read_csv("data/cleaned_crime_data.csv")
 
-# Crime type distribution
 sns.countplot(y=df['Primary Type'])
 plt.title("Crime Type Distribution")
 plt.show()
 
-# Crime by hour
 sns.histplot(df['Hour'], bins=24)
 plt.title("Crime by Hour")
 plt.show()
